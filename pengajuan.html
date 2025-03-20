@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Lamaran</title>
+    <link rel="stylesheet" href="pengajuan.css">
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="window.location.href='index.html'">&#8592; Kembali</button>
+        <h1>Pengajuan Lamaran</h1>
+    </header>
+    <main>
+        <form action="submit_application.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="resume">Unggah CV:</label>
+            <input type="file" id="resume" name="resume" required>
+            
+            <button type="submit">Kirim Lamaran</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; INFO LOKER</p>
+    </footer>
+</body>
+</html>
